@@ -13,20 +13,23 @@
 		</h1>
 
 		<p>
-			<strong>Your Name</strong> — <em>Your MIT Email Address</em>
+			<strong>Anika Puri</strong> — <em>anpuri@mit.edu</em>
 		</p>
 	</header>
 
 	<main>
-    <h2>Proposition: [STATE PROPOSITION]</h2>
+
+	<p><b>Dataset:</b> The dataset I decided to use was Abortion Data by U.S. State from the Guttmacher Institute. While familiarizing myself with this dataset, I immediately noticed how while the dataset was constructed as a comparison between 2017 and 2020, it included variables like “No. of abortions, by state of residence, 2020” for 2020 but no corresponding variable for 2017. Instead the dataset include “No. of abortions among women aged 18-19, by state of residence, 2017”, however these two variables can’t ethically be compared to each other. In addition, the dataset consisted of many non discrete values with the cells instead filled with “unavailable”, “n/a” or “<1,000”. </p>
+    <p><b>Background:</b> At the time in 2020 legally the U.S. Supreme Court’s ruling in Roe v. Wade recognized the right to abortion, however this didn’t guarantee the availability of proper health care providers for abortion. In fact, in response to the Supreme Court decision, several states moved forward with strict regulations on abortion clinics including the necessary width of corridors and size of procedure rooms in the clinic.</p>
+	<h2>Proposition: In the United States, there are not enough abortion clinics. </h2>
 
 		<section>
-      <h3>FOR the Proposition</h3>
+      <h3>AGAINST the Proposition</h3>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+			<img src="Against_Prop.png" width = "700" height = auto/>
 				<figcaption>
-					BRIEF CAPTION HERE.
+					Objective of Design #1: The primary goal was to showcase the proportion of individuals seeking out-of-state abortion care relative to the total state population. The chart aims to illustrate that a majority of states have sufficient in-state abortion clinics to meet residents’ needs, by visually highlighting the minimal number of residents seeking services elsewhere. 
 				</figcaption>
 			</figure>
 
@@ -35,30 +38,36 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>While understanding the data, I experimented with various relationship, including abortion rate among women aged 15-44 by state and the percentage change in the number of abortion clinics. Another angle I explored was the correlation between change in abortion rates and clinic numbers from 2017 to 2020. My goal was to plot these two independent variables against each other in order to emphasize how for each state with an increase/decrease of abortions there was a corresponding increase/decrease of abortion clinics. While the variables statistically had a relatively strong correlation, the line plot didn’t effectively communicate this. While a data analyst would likely notice the correlations at the peaks, to a general audience the lines weren’t perfectly in sync and thus didn’t communicate that the number of clinics was adequate.</li>
+				<li>Instead I decided to shift my focus to comparing the number of residents seeking out-of-state care to the total population of each state. This aimed to demonstrate that in-state clinics are generally sufficient, by showing that the number of residents going out of state for abortion care was small in comparison to the total number of residents. </li>
+				<li>Initially, I started my representation with a multidimensional bar chart which had two bars for each state - one for the total population and the other for the # of residents going out of state for abortion care. However this proved to be too complex and cluttered, especially when including all 50 states. </li>
+				<li>I ultimately decided to use a 100% stacked bar chart, illustrated the proportion of residents seeking out of state care again the total population, for a cleaner and more impactful visual. When plotting this data, an interesting note is that each column consists of [Total Residents][Residents Seeking Out of State Care]. One of the reasons I decided against plotting the columns like [Total Residents - Residents Seeking Out of State of Care][Residents Seeking Out of State Care] was to help convince the audience into that residents seeking out of state care was in fact a smaller fraction of the population - statistically however the graph is accurate. These were some of the design choices I made for which type of plot to choose and also how to represent the data. </li>
+				<li>The color scheme was strategically chosen to highlight the data's implications: a bright green for the total population and a light red for those seeking out-of-state care. This choice was meant to visually emphasize that the majority of residents rely on in-state care, using the contrast between red and green to denote the negative connotation of seeking care elsewhere. Visually, the plot is dominated by the bright green color, which influences the viewer into believing that a vast majority of residents are satisfied with in state abortion care. In addition another important consideration was whether the # of Residents Seeking out of state abortion care could be at the bottom of each column or from the top. I ultimately decided to keep this measure at the top because our attention is drawn to the core of the graph (closer to the x-axis) and we only see trickles of red peaking at the top. </li>
+				<li>Overall, I would rate this plot on a scale of deceptiveness as a -1. My design accurately represents the data in its entirety, including all 50 states and the actual values were not influenced. However, the scaling of how my data is represented in proportion to each other diminishes the visual representation of how many residents are seeking out of state care. For instance in Mississippi, technically 99% of residents are seeking out-of-state abortion care - this number of awfully high and represents that there aren’t enough in-state clinics. However, with my representation of Total Number of Residents to # of Residents seeking out of state care, the column for Mississippi is actually only around 50% red. In addition the colors I used were in an effort to guide the viewer’s focus, potentially downplaying the significance of those seeking out-of-state care, to help negate the statement that there aren’t enough abortion clinics. </li>
 			</ul>
     </section>
 
     <section>
-      <h3>AGAINST the Proposition</h3>
+      <h3>FOR the Proposition</h3>
 
+	  <p>Objective of Design #2: The main goal of Design #2 as to support the statement that there aren’t enough abortion clinics.</p>
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+			<img src="For_not.png" width = "700" height = auto/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+					One method I utilized was to refine the initial design to more accurately reflect the reality of abortion clinic availability. This involved adjusting the 100% stacked bar chart to contrast the number of residents seeking out-of-state abortion care against the total state population - minus those residents. I also strategically positioned the red bars, representing the proportion of residents seeking care elsewhere, near the x-axis to better underscore their significance across al states. <b>Despite these adjustments, I felt that this representation still fell short of effectively conveying the urgent need for more abortion clinics in many states - I’ve still included the design above.</b>
 				</figcaption>
 			</figure>
+
+			<p></p>
 
 			<p>
 				Design Decisions and Rationale:
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>I shifted to a multidimensional bar chart, contrasting the number of counties without abortion care in 2014 vs. 2020. This visualization alarmingly shows that the majority of states have nearly all counties lacking in abortion care, with little improvement over 6 years. My choice of strong, contrasting colors - foundation blue and red - I believe enhanced the clarity and avoided clutter (previously seen when trying the previous design’s color palette on this bar chart). </li>
+				<li> I opted to exclude the District of Columbia because it had 0 countries - while Connecticut also behaved as an outlier with 0% of its counties without abortion care, it was included in the plot due to its eight counties. </li>
+				<li>On a scale for how deceptive my design #2 is, I would argue 1 because I believe its a clear representation of data, including only the non-comparable care of District of Columbia. With my design decision and careful selection of neutral colors, I aimed to present the facts unambiguously. The height of the bars themselves demonstrate the extent to which there exists a widespread lack of abortion care facilities across the states. </li>
 			</ul>
     </section>
 
